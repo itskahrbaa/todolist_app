@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="20dp"
-        android:text="New Task"
+        android:text="مهمة جديد"
+        android:fontFamily="@font/tajawal_medium"
         android:textSize="30sp"
         style="@style/TextAppearance.AppCompat.Title"/>
 
@@ -28,7 +29,8 @@
             android:inputType="textAutoCorrect"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Title"/>
+            android:fontFamily="@font/tajawal_medium"
+            android:hint="العنوان"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -45,7 +47,8 @@
             android:inputType="textAutoCorrect"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Description"/>
+            android:fontFamily="@font/tajawal_medium"
+            android:hint="وصف"/>
 
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -60,7 +63,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginHorizontal="20dp"
-            android:text="Create Task" />
+            android:fontFamily="@font/tajawal_medium"
+            android:text="أضف المهمة" />
 
         <ImageButton
             android:id="@+id/removeTask"

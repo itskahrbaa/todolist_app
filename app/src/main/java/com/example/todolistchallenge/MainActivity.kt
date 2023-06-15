@@ -1,7 +1,7 @@
 package com.example.todolistchallenge
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.todolistchallenge.databinding.ActivityMainBinding
@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity(), TaskItemClickListener {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         taskViewModel = ViewModelProvider(this)[TaskViewModel::class.java]
         binding.newTaskButton.setOnClickListener {
             NewTaskSheet(null).show(supportFragmentManager, "TaskNewTag")
